@@ -4,12 +4,13 @@ function Header({ links, activeSection, onNavigate, activeTopicTitle }) {
       <div className="container header-shell">
         <button className="brand-mark" type="button" onClick={() => onNavigate("hero")}>
           <span className="brand-mark__eyebrow">Hồ sơ học thuật</span>
-          <span className="brand-mark__title">Triêt học Mác - Lênin 1945</span>
+          <span className="brand-mark__title">Thế kỷ 21 Interactive</span>
         </button>
 
         <nav className="section-nav" aria-label="Điều hướng phần nội dung">
           {links.map((link) => {
             const isActive = activeSection === link.id;
+
             return (
               <button
                 key={link.id}
@@ -25,7 +26,7 @@ function Header({ links, activeSection, onNavigate, activeTopicTitle }) {
         </nav>
 
         <div className="header-status" aria-live="polite">
-          <span className="header-status__label">Chủ đề đang xem</span>
+          <span className="header-status__label">Nhóm đang xem</span>
           <strong className="header-status__value">{activeTopicTitle}</strong>
         </div>
       </div>

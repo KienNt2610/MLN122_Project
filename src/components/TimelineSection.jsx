@@ -6,10 +6,10 @@ function TimelineSection({ topics, activeTopicId, onSelect }) {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Tiến trình nhận thức</p>
-          <h2>Timeline đồng bộ theo chủ đề đang chọn</h2>
+          <h2>Timeline tổng hợp của 4 nhóm chủ đề</h2>
           <p>
-            Mỗi điểm nhấn là một lát cắt phương pháp luận để kết nối triết học với
-            Cách mạng Tháng Tám 1945.
+            Mỗi điểm nhấn là một lát cắt lớn của thế kỷ 21, giúp liên kết sự kiện,
+            thành tựu và biến đổi trên cùng một mạch trình bày.
           </p>
         </div>
 

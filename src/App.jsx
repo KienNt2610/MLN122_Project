@@ -22,9 +22,9 @@ function App() {
       hero: heroRef,
       overview: overviewRef,
       details: detailsRef,
-      timeline: timelineRef
+      timeline: timelineRef,
     }),
-    []
+    [],
   );
 
   const activeTopic = topics.find((topic) => topic.id === activeTopicId) ?? topics[0];
@@ -42,8 +42,8 @@ function App() {
       },
       {
         threshold: [0.25, 0.5, 0.7],
-        rootMargin: "-25% 0px -45% 0px"
-      }
+        rootMargin: "-25% 0px -45% 0px",
+      },
     );
 
     Object.values(sectionRefs).forEach((ref) => {
@@ -58,7 +58,7 @@ function App() {
   const scrollToSection = (sectionId) => {
     sectionRefs[sectionId]?.current?.scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "start",
     });
   };
 
@@ -99,10 +99,10 @@ function App() {
           <div className="container">
             <div className="section-heading">
               <p className="eyebrow">Chi tiết học thuật</p>
-              <h2>Phân tích sâu theo từng chuyên đề</h2>
+              <h2>Phân tích sâu theo từng nhóm nội dung</h2>
               <p>
-                Chuyển đổi giữa các tab để xem nội dung đầy đủ, ảnh minh họa và gợi ý
-                tư liệu trình bày tương ứng.
+                Chuyển đổi giữa các tab để xem tổng quan, 3 mục con nổi bật và các
+                tác động tiêu biểu tương ứng với nhóm đang được chọn.
               </p>
             </div>
 

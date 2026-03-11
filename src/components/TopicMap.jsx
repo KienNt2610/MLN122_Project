@@ -6,9 +6,9 @@ function TopicMap({ topics, activeTopicId, onSelect }) {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Tổng quan nội dung</p>
-          <h2>Bản đồ 6 chuyên đề triết học</h2>
+          <h2>Bản đồ 4 nhóm chủ đề của thế kỷ 21</h2>
           <p>
-            Chọn một chủ đề để đồng bộ thẻ, phần chuyên đề và tiến trình học tập ở
+            Chọn một nhóm để đồng bộ phần chuyên đề, panel thông tin và timeline
             bên dưới.
           </p>
         </div>

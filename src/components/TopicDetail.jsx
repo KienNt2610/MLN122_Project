@@ -9,7 +9,7 @@ function TopicDetail({ topic }) {
       <img
         className="topic-detail__image"
         src={topic.image}
-        alt={`Minh họa cho chủ đề ${topic.title}`}
+        alt={`Minh họa cho nhóm ${topic.title}`}
       />
 
       <div className="topic-detail__body">
@@ -19,14 +19,14 @@ function TopicDetail({ topic }) {
 
         <div className="topic-detail__meta">
           <div>
-            <h4>Từ khóa</h4>
-            <div className="topic-detail__tags">
-              {topic.tags.map((tag) => (
-                <span key={tag} className="topic-pill">
-                  {tag}
-                </span>
+            <h4>3 mục nổi bật</h4>
+            <ul>
+              {topic.items.map((item) => (
+                <li key={item.id}>
+                  <strong>{item.title}:</strong> {item.context}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
           <div>

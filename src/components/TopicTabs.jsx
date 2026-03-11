@@ -1,8 +1,9 @@
 function TopicTabs({ topics, activeTopicId, onSelect }) {
   return (
-    <div className="topic-tabs" role="tablist" aria-label="Danh sách chuyên đề">
+    <div className="topic-tabs" role="tablist" aria-label="Danh sách nhóm chủ đề">
       {topics.map((topic) => {
         const isActive = topic.id === activeTopicId;
+
         return (
           <button
             key={topic.id}

@@ -4,34 +4,35 @@ function HeroIntro({ onExplore, onJumpDetails }) {
       <div className="container hero-intro__grid">
         <div className="hero-intro__content">
           <p className="eyebrow">Landing page học thuật tương tác</p>
-          <h1>Triết học Mác - Lênin & Cách mạng Tháng Tám 1945</h1>
+          <h1>Thế kỷ 21 qua các sự kiện, thành tựu và biến đổi nổi bật</h1>
           <p className="hero-intro__lead">
-            Một không gian học tập bằng tiếng Việt, trình bày 6 chuyên đề cốt lõi
-            theo hướng trực quan, đồng bộ và dễ chuyển thành bài thuyết trình.
+            Một giao diện trình bày giúp người xem đi từ tổng quan đến phân tích
+            chi tiết của 4 nhóm nội dung lớn: lịch sử, khoa học công nghệ, văn hóa
+            nghệ thuật và kinh tế xã hội.
           </p>
           <div className="hero-intro__actions">
             <button className="button-primary" type="button" onClick={onExplore}>
-              Khám phá chuyên đề
+              Khám phá nhóm nội dung
             </button>
             <button className="button-secondary" type="button" onClick={onJumpDetails}>
-              Xem nội dung chi tiết
+              Xem phân tích chi tiết
             </button>
           </div>
         </div>
 
         <div className="hero-intro__panel" aria-label="Điểm nhấn nội dung học thuật">
           <div className="hero-stat">
-            <span className="hero-stat__value">6</span>
-            <span className="hero-stat__label">chủ đề trọng tâm</span>
+            <span className="hero-stat__value">4</span>
+            <span className="hero-stat__label">nhóm nội dung lớn</span>
           </div>
           <div className="hero-stat">
-            <span className="hero-stat__value">1945</span>
-            <span className="hero-stat__label">mốc lịch sử bản lề</span>
+            <span className="hero-stat__value">12</span>
+            <span className="hero-stat__label">dấu mốc tiêu biểu</span>
           </div>
           <div className="hero-quote">
             <p>
-              “Hiểu đúng quy luật vận động của lịch sử là điều kiện để hành động
-              đúng trong thực tiễn.”
+              “Bấm vào từng nhóm để thấy cách thế kỷ 21 được định hình bởi các cú
+              sốc, đột phá và chuyển dịch lớn.”
             </p>
           </div>
         </div>

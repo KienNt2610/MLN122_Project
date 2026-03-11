@@ -6,7 +6,9 @@ function TopicCard({ topic, isActive, onSelect }) {
       onClick={() => onSelect(topic.id)}
       aria-pressed={isActive}
     >
-      <span className="topic-card__number">{topic.number}</span>
+      <span className="topic-card__number">
+        {topic.icon} {topic.number}
+      </span>
       <h3>{topic.title}</h3>
       <p>{topic.overview}</p>
       <div className="topic-card__tags" aria-label={`Từ khóa của ${topic.title}`}>
