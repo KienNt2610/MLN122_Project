@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const bookQrSrc = "/qr.png";
+const embeddedVideoSrc = "https://www.youtube.com/embed/QtYg-3fb9b0?rel=0";
 
 function VideoPanel({ topic }) {
   const [qrAvailable, setQrAvailable] = useState(true);
@@ -8,13 +9,24 @@ function VideoPanel({ topic }) {
   return (
     <aside className="video-panel" aria-label={`Thông tin nhanh cho nhóm ${topic.title}`}>
       <div className="video-panel__frame">
-        <div className="video-panel__badge">Từ khóa / nhóm nội dung</div>
-        <h3>{topic.title}</h3>
-        <p>Chọn từ khóa phù hợp để tìm thêm tư liệu minh họa cho phần trình bày.</p>
-        <div className="video-panel__keyword">
-          <span>Từ khóa tìm kiếm</span>
-          <strong>{topic.videoKeyword}</strong>
+        <div className="video-panel__badge">Video minh họa</div>
+        <div className="video-panel__embed">
+          <iframe
+            src={embeddedVideoSrc}
+            title="Video minh họa chủ đề Thế kỷ 21"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         </div>
+        <h3>{topic.title}</h3>
+        <p>Xem trực tiếp trên trang để minh họa thêm cho phần trình bày của nhóm nội dung đang chọn.</p>
+      </div>
+
+      <div className="video-panel__keyword">
+        <span>Từ khóa tìm kiếm</span>
+        <strong>{topic.videoKeyword}</strong>
       </div>
 
       <div className="video-panel__qr">

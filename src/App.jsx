@@ -113,8 +113,8 @@ function App() {
             />
 
             <div className="detail-stage__grid">
-              <TopicDetail topic={activeTopic} />
               <VideoPanel topic={activeTopic} />
+              <TopicDetail topic={activeTopic} />
             </div>
           </div>
         </section>
